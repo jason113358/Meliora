@@ -21,32 +21,37 @@
 </head>
 
 <body>
-    <header class="header" id="header">
-        <div class="flex-align-center">
-            <img class="" src="assets/images/icons/ico-menu.svg" alt="" height="" width="" />
-            <img class="" src="assets/images/icons/ico-close-circle.svg" alt="" height="" width="" />
-            <div>
-                Menu
-            </div>
-
-            <div>
-                MELIORA
-            </div>
-
-            <div>
-                <div>
-                    <img class="" src="assets/images/icons/ico-fb.svg" alt="" height="" width="" />
-                    <img class="" src="assets/images/icons/ico-insta.svg" alt="" height="" width="" />
+    <header class="header position-relative" id="header">
+        <div class="header-left flex-align-center">
+            <div class="flex-align-center">
+                <div class="h-ico">
+                    <img class="" src="assets/images/icons/ico-menu.svg" alt="" height="" width="" />
+                    <img class="d-none" src="assets/images/icons/ico-close-circle.svg" alt="" height="" width="" />
                 </div>
 
                 <div>
-                    <img class="" src="assets/images/icons/ico-search.svg" alt="" height="" width="" />
-                    <img class="" src="assets/images/icons/ico-heart.svg" alt="" height="" width="" />
+                    Menu
                 </div>
             </div>
         </div>
 
-        <nav class="">
+        <div class="logo-text absolute-center">
+            MELIORA
+        </div>
+
+        <div class="header-right flex-align-center">
+            <div class="h-ico first flex-align-center">
+                <img class="" src="assets/images/icons/ico-fb.svg" alt="" height="" width="" />
+                <img class="" src="assets/images/icons/ico-insta.svg" alt="" height="" width="" />
+            </div>
+
+            <div class="h-ico flex-align-center">
+                <img class="" src="assets/images/icons/ico-search.svg" alt="" height="" width="" />
+                <img class="" src="assets/images/icons/ico-heart.svg" alt="" height="" width="" />
+            </div>
+        </div>
+
+        <nav class="d-none position-relative">
             <div class="">
 
             </div>
@@ -69,15 +74,15 @@
         <div class="banner">
             <img class="" src="assets/images/banners/banner-1.jpg" alt="" height="" width="" />
 
-            <div class="baner__info">
-                <div class="baner__info--intro">
+            <div class="banner__info">
+                <div class="banner__info--intro">
                     Meliora giới thiệu bộ sưu tập
                 </div>
-                <div class="baner__info--title">
+                <div class="banner__info--title flex-align-center">
                     Sắc Màu Bình Yên
                     <a href="#">Xem thêm</a>
                 </div>
-                <div class="baner__info--content">
+                <div class="banner__info--content">
                     Khám phá sự bình yên và sự thư thái trong bộ sưu tập Sắc Màu Bình Yên. Với các gam màu nhẹ nhàng và
                     họa tiết thiên nhiên, mỗi thiệp trong bộ sưu tập này đều mang lại cảm giác yên bình và thư thái, tạo
                     điều kiện lý tưởng cho một đám cưới đầy cảm xúc và đẹp đẽ.
@@ -87,78 +92,104 @@
 
 
 
-
-
-        <div class="">
-            <div class="gallery-box">
-                <img class="" src="assets/images/items/1.jpg" alt="" height="" width="" />
-                <div class="gallery-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
-            </div>
-
-            <div class="gallery-box">
-                <img class="" src="assets/images/items/1.jpg" alt="" height="" width="" />
-                <div class="gallery-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
-            </div>
-
-            <div class="gallery-box">
-                <img class="" src="assets/images/items/1.jpg" alt="" height="" width="" />
-                <div class="gallery-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
-            </div>
-
-            <div class="gallery-box">
-                <img class="" src="assets/images/items/1.jpg" alt="" height="" width="" />
-                <div class="gallery-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
-            </div>
-
-            <div class="gallery-box">
-                <img class="" src="assets/images/items/1.jpg" alt="" height="" width="" />
-                <div class="gallery-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
-            </div>
+        <div class="general-title">
+            Các bộ sưu tập mới 2023-2024
         </div>
 
 
 
+        <div class="lst-gallery">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide gallery-box">
+                        <img class="" src="assets/images/slides/1.jpg" alt="" height="" width="" />
+                        <div class="gallery-box__title">Sắc Màu Bình Yên</div>
+                    </a>
+
+                    <a href="#" class="swiper-slide gallery-box">
+                        <img class="" src="assets/images/slides/2.jpg" alt="" height="" width="" />
+                        <div class="gallery-box__title">Chạm Nhẹ Yêu Thương</div>
+                    </a>
+
+                    <a href="#" class="swiper-slide gallery-box">
+                        <img class="" src="assets/images/slides/3.jpg" alt="" height="" width="" />
+                        <div class="gallery-box__title">Tình Ca Vượt Thời Gian</div>
+                    </a>
+
+                    <a href="#" class="swiper-slide gallery-box">
+                        <img class="" src="assets/images/slides/4.jpg" alt="" height="" width="" />
+                        <div class="gallery-box__title">Hành Trình Tình Yêu</div>
+                    </a>
+
+                    <a href="#" class="swiper-slide gallery-box">
+                        <img class="" src="assets/images/slides/5.jpg" alt="" height="" width="" />
+                        <div class="gallery-box__title">Cặp Đôi Sắc Màu</div>
+                    </a>
+                </div>
+            </div>
+
+            <script>
+                let swiper = new Swiper('.lst-gallery .swiper-container', {
+                    slidesPerView: 5,
+                    spaceBetween: 0,
+                    loop: false
+                }
+                );
+            </script>
+        </div>
 
 
-        <div class="header">
-            <div class="header__sup">Đến từ bộ sưu tập</div>
-            <div class="header__main">
-                Hành Trình Tìm Kiếm Tình Yêu
-                <a href="#">Xem thêm</a>
+
+        <div class="general-title">
+            <div class="general-title__sub">
+                Đến từ bộ sưu tập
+            </div>
+            Các bộ sưu tập mới 2023-2024
+        </div>
+
+        <div class="gallery-show d-flex">
+            <div class="left">
+                <img src="assets/images/galleries/b-1.jpg" alt="" height="" width="" />
+            </div>
+            <div class="right">
+                <div class="gallery-h">
+                    <div class="gallery-h__sup">Đến từ bộ sưu tập</div>
+                    <div class="gallery-h__main">
+                        Hành Trình Tìm Kiếm Tình Yêu
+                        <a href="#">Xem thêm</a>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="item-box">
+                        <img class="" src="assets/images/galleries/s-1.jpg" alt="" height="" width="" />
+                        <div class="item-box__tag--new">Mới</div>
+                        <div class="item-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                        <div class="item-box__price">5.666d - 18.100d</div>
+                    </div>
+
+                    <div class="item-box">
+                        <img class="" src="assets/images/galleries/s-2.jpg" alt="" height="" width="" />
+                        <div class="item-box__tag--new">Mới</div>
+                        <div class="item-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                        <div class="item-box__price">5.666d - 18.100d</div>
+                    </div>
+
+                    <div class="item-box">
+                        <img class="" src="assets/images/galleries/s-3.jpg" alt="" height="" width="" />
+                        <div class="item-box__tag--new">Mới</div>
+                        <div class="item-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                        <div class="item-box__price">5.666d - 18.100d</div>
+                    </div>
+
+                    <div class="item-box">
+                        <img class="" src="assets/images/galleries/s-4.jpg" alt="" height="" width="" />
+                        <div class="item-box__tag--new">Mới</div>
+                        <div class="item-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                        <div class="item-box__price">5.666d - 18.100d</div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="">
-            <div class="item-box">
-                <img class="" src="assets/images/items/1.jpg" alt="" height="" width="" />
-                <div class="item-box__tag--new">Mới</div>
-                <div class="item-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
-                <div class="item-box__price">5.666d - 18.100d</div>
-            </div>
-
-            <div class="item-box">
-                <img class="" src="assets/images/items/1.jpg" alt="" height="" width="" />
-                <div class="item-box__tag--new">Mới</div>
-                <div class="item-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
-                <div class="item-box__price">5.666d - 18.100d</div>
-            </div>
-
-            <div class="item-box">
-                <img class="" src="assets/images/items/1.jpg" alt="" height="" width="" />
-                <div class="item-box__tag--new">Mới</div>
-                <div class="item-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
-                <div class="item-box__price">5.666d - 18.100d</div>
-            </div>
-
-            <div class="item-box">
-                <img class="" src="assets/images/items/1.jpg" alt="" height="" width="" />
-                <div class="item-box__tag--new">Mới</div>
-                <div class="item-box__title">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
-                <div class="item-box__price">5.666d - 18.100d</div>
-            </div>
-        </div>
-
-
-
 
 
         <div class="header">
