@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/variable.css">
+
+    <link rel="stylesheet" href="assets/plugins/swiper-slider/css/swiper.min.css">
+    <script src="assets/plugins/swiper-slider/js/swiper.min.js"></script>
+
+    <meta name="title" content="MELIORA">
+    <meta name="keywords" content="MELIORA">
+    <meta name="description" content="MELIORA">
+
+    <title>MELIORA</title>
+</head>
+
+<body>
+    <header class="header position-relative" id="header">
+        <div class="header-left flex-align-center">
+            <div class="flex-align-center">
+                <div class="h-ico">
+                    <img class="" src="assets/images/icons/ico-menu.svg" alt="" height="" width="" />
+                    <img class="d-none" src="assets/images/icons/ico-close-circle.svg" alt="" height="" width="" />
+                </div>
+
+                <div>
+                    Menu
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-text absolute-center">
+            MELIORA
+        </div>
+
+        <div class="header-right flex-align-center">
+            <div class="h-ico first flex-align-center">
+                <img class="" src="assets/images/icons/ico-fb.svg" alt="" height="" width="" />
+                <img class="" src="assets/images/icons/ico-insta.svg" alt="" height="" width="" />
+            </div>
+
+            <div class="h-ico flex-align-center">
+                <img class="" src="assets/images/icons/ico-search.svg" alt="" height="" width="" />
+                <img class="" src="assets/images/icons/ico-heart.svg" alt="" height="" width="" />
+            </div>
+        </div>
+
+        <nav class="d-none position-relative">
+            <div class="">
+
+            </div>
+            <div>
+                <div>
+                    <a href="#">
+
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class=body>
+        <div class="category-top">
+            <div>
+                <ul class="breadcrumb-nav">
+                    <li><a href="#" aria-label="Trang chủ">Trang chủ</a></li>
+                    <li><a href="#" aria-label="Danh mục">Danh mục</a></li>
+                </ul>
+
+                <div class="general-title">
+                    Lấp Lánh Ánh Sáng Tình Yêu
+                </div>
+            </div>
+            <div class="category-top__content">
+                Tưởng tượng một không gian tràn ngập ánh sáng lấp lánh, với các thiệp được làm bằng giấy lấp lánh và
+                hoa văn kim loại. Mỗi chi tiết nhấn nhá, từ họa tiết hoa rực rỡ đến dải phản quang lấp lánh, đều
+                phản ánh ánh sáng và tạo ra một cảm giác pha lê rực rỡ.
+                <a href="#">Xem thêm</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img class="" src="assets/images/banners/banner-category.png" alt="" height="" width="">
+        </div>
+        <div class="category-filter">
+            <div class="category-filter__total">
+                1802 sản phẩm
+            </div>
+
+            <div class="category-filter__dropdowns">
+                <div class="dropDown-wrapper-QR">
+                    <input type="checkbox" id="dropDown-toggle">
+                    <label for="dropDown-toggle" class="dropDown-toggle-label-QR">Màu sắc</label>
+                    <div class="dropDown-QR">
+                        <input id="1" name="options" onclick="item_onclick(this.id);">
+                        <label for="option-1">Màu 1</label>
+                        <input id="2" name="options" onclick="item_onclick(this.id);">
+                        <label for="option-2">Màu 2</label>
+                        <input id="3" name="options" onclick="item_onclick(this.id);">
+                        <label for="option-3">Màu 3</label>
+                    </div>
+                </div>
+                <script>
+                    function item_onclick(id) {
+                        document.getElementById(id).value = "checked";
+                        var input = document.getElementsByTagName("input");
+                        for (var x = 0; x < options.length; x++)
+                            if (input[x].value == "checked") {
+                                input[x].checked = true;
+                            }
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="category-list-item">
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-1.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-2.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-3.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered">
+                <img class="" src="assets/images/galleries/s-4.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+        </div>
+        <div class="category-list-item">
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-1.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-2.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-3.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered">
+                <img class="" src="assets/images/galleries/s-4.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+        </div>
+
+        <div class="category-list-item">
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-1.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-2.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-3.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered">
+                <img class="" src="assets/images/galleries/s-4.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+        </div>
+
+        <div class="category-list-item">
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-1.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-2.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered n-r">
+                <img class="" src="assets/images/galleries/s-3.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+
+            <a class="item-box bordered">
+                <img class="" src="assets/images/galleries/s-4.jpg" alt="" height="" width="" />
+                <div class="hot-tag">Mới</div>
+                <div class="new-tag">Bán chạy</div>
+                <div class="item-box__title p32">Lòng Đam Mê Thiên Đường Nhiệt Đới</div>
+                <div class="item-box__price p32">5.666d - 18.100d</div>
+            </a>
+        </div>
+    </main>
+
+    <footer class=footer>
+
+    </footer>
+</body>
+
+</html>

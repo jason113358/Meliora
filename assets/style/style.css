@@ -1187,12 +1187,376 @@ a {
 }
 
 
+/* #region breadcrumbs  */
+ul.breadcrumb-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding: 48px 0 0 32px;
+}
+
+ul.breadcrumb-nav li {
+    display: inline
+}
+
+ul.breadcrumb-nav li+li {
+    margin-left: 18px
+}
+
+ul.breadcrumb-nav li+li:before {
+    content: ">";
+    font-size: 19px;
+    position: absolute;
+    margin: -1px 0 0 -15px;
+}
+
+ul.breadcrumb-nav li a {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 21.85px;
+    text-align: center;
+}
+
+ul.breadcrumb-nav li a:hover {
+    opacity: 0.8;
+}
+
+/* #endregion */
+
+/* #region category */
+.category-list-item {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto auto auto auto;
+    position: relative;
+}
+
+
+.category-top {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto 50%;
+    position: relative;
+}
+
+.category-top__content {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 21.85px;
+    text-align: left;
+    padding: 48px 32px;
+}
+
+.category-top__content a {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 23.75px;
+    display: block;
+    margin-top: 18px;
+}
+
+.category-desc a:hover {
+    opacity: 0.8;
+}
 
 
 
 
 
 
+.category-filter {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto 50%;
+    padding: 24px 32px;
+}
+
+.category-filter__total {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 42px;
+    /* Must have height with dropdowns */
+}
+
+.category-filter__dropdowns {}
+
+/* #region Dropdown */
+.dropDown-wrapper-QR {
+    position: relative;
+    height: 42px;
+    width: max-content;
+    border-radius: 100px;
+    float: right;
+}
+
+/* the style for the label */
+.dropDown-toggle-label-QR {
+    position: relative;
+    padding: 10px 50px 25px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    font-family: Helvetica;
+    font-size: 14px;
+    transition: opacity .2s ease;
+    letter-spacing: .2px;
+    /* force parent to wrap around the label tag */
+    float: left;
+    border: 1px solid #cdcdcd;
+    min-width: 100px;
+    max-height: 25px;
+}
+
+/* arrow indicator on the button */
+.dropDown-toggle-label-QR:after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    /* this makes the square appear as a white triangle */
+    background: linear-gradient(45deg, black 50%, transparent 0);
+    position: absolute;
+    right: 15px;
+    top: 35%;
+    transform: rotate(-45deg);
+}
+
+/* hide all input fields since the labels are connected to them by the id */
+.dropDown-wrapper-QR input {
+    display: none;
+}
+
+/* rotate the button arrow upwards */
+.dropDown-wrapper-QR>input:checked+label:after {
+    top: 45%;
+    transform: rotate(135deg);
+}
+
+/* this will show dropDown when input is checked */
+.dropDown-wrapper-QR>input:checked+label+.dropDown-QR {
+    display: inline-block;
+    z-index: 2;
+    background-color: #fff;
+}
+
+/* the drop-down style*/
+.dropDown-QR {
+    position: absolute;
+    right: 0;
+    top: calc(100%);
+    padding: 0 0 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    border-radius: 4px 0 4px 4px;
+    min-width: 180px;
+    display: none;
+}
+
+/* the drop-down options style*/
+.dropDown-QR label {
+    display: block;
+    padding: 12px 12px;
+    border-left: 0 solid transparent;
+    font-family: Arial;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition:
+        border .3s ease,
+        padding-left .3s ease,
+        background-color .3s ease;
+}
+
+/* option item on hover */
+.dropDown-QR label:hover {
+    background-color: #cdcdcd;
+}
+
+/* this shows that the list item was selected */
+.dropDown-QR input:checked+label {
+    opacity: 1;
+    background-color: rgba(180, 180, 180, .2);
+}
+
+/* #ednregion */
+
+/* #endregion */
+
+
+
+
+.category-container {
+    width: 80vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.category-container img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+}
+
+.category-headline {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 39.6px;
+    margin: 10px 0;
+}
+
+.category-sub-headline {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 32.4px;
+    margin: 10px 0;
+}
+
+.category-content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    margin: 10px 0;
+}
+
+
+.border-line {
+    border-bottom: 1px solid #877D74;
+    width: 100vw;
+    margin-top: -1px;
+    height: 1px;
+    max-width: 0 auto;
+    position: relative;
+}
+
+/* #endregion */
+
+.cart-sum {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27.6px;
+    text-align: left;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto 50%;
+    margin: 24px 0;
+}
+
+.cart-sum.total {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 32.4px;
+    text-align: left;
+}
+
+.cart-sum .left {
+    text-align: left;
+}
+
+.cart-sum .right {
+    text-align: right;
+}
+
+.btn-payment {
+    background-color: #3B403D;
+    cursor: pointer;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 19px;
+    padding: 11px 32px;
+    width: max-content;
+    float: right;
+    margin: 24px 0;
+}
+
+.btn-payment:hover {
+    opacity: 0.8;
+}
+
+
+.cart-container {
+    display: grid;
+    grid-template-columns: 306px 260px auto auto;
+    gap: 25px;
+    max-width: 1170px;
+    width: calc(100vw - 64px);
+    margin: 0 auto;
+}
+
+.c-image img {
+    width: 306px;
+    height: auto;
+    aspect-ratio: 1;
+}
+
+.c-name {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 32.4px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.c-info {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 21.85px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.c-price {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 32.4px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+
+.c-remove {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 23.75px;
+    text-align: left;
+    color: #AE344A;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.c-remove:hover {
+    opacity: 0.8;
+}
+
+.c-total {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 39.6px;
+    text-align: left;
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+.c-button {
+    display: grid;
+    grid-template-columns: 48px 48px 48px;
+    gap: 2px;
+}
+
+.c-button div {
+    background: #877D741A;
+    height: 48px;
+    width: 48px;
+    margin: 0 auto;
+    line-height: 48px;
+    cursor: pointer;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.c-button div:hover {
+    opacity: 0.8;
+}
 
 
 
