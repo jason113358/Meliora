@@ -21,19 +21,21 @@
 </head>
 
 <body>
-    <header class="header position-relative" id="header">
-        <div class="header-left flex-align-center">
+    <header class="header position-sticky" id="header">
+        <input id="isShowMenu" type="checkbox" class="d-none">
+
+        <label class="header-left flex-align-center" for="isShowMenu">
             <div class="flex-align-center">
                 <div class="h-ico">
-                    <img class="" src="assets/images/icons/ico-menu.svg" alt="" height="" width="" />
-                    <img class="d-none" src="assets/images/icons/ico-close-circle.svg" alt="" height="" width="" />
+                    <img class="default" src="assets/images/icons/ico-menu.svg" alt="" height="" width="" />
+                    <img class="close" src="assets/images/icons/ico-close-circle.svg" alt="" height="" width="" />
                 </div>
 
                 <div>
                     Menu
                 </div>
             </div>
-        </div>
+        </label>
 
         <div class="logo-text absolute-center">
             MELIORA
@@ -47,27 +49,33 @@
 
             <div class="h-ico flex-align-center">
                 <img class="" src="assets/images/icons/ico-search.svg" alt="" height="" width="" />
+
                 <img class="" src="assets/images/icons/ico-heart.svg" alt="" height="" width="" />
             </div>
         </div>
 
-        <nav class="d-none position-relative">
-            <div class="">
-
+        <div class="menu-reg">
+            <div class="menu-category">
+                <div class="selected">Thiệp cưới giấy</div>
+                <div>Thiệp cưới online</div>
+                <div>Blog</div>
+                <div>Thư viện hình ảnh</div>
+                <div>Phụ kiện</div>
+                <div>Thiệp mẫu miễn phí</div>
+                <div>Liên hệ</div>
             </div>
-            <div>
-                <div>
-                    <a href="#">
-
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-
-                    </a>
-                </div>
-            </div>
-        </nav>
+            <nav class="menu-content">
+                <a href="#">BST. Eleance Eternal<img src="" alt="" height="" width="" class=""></a>
+                <a href="#">BST. Lấp Lánh Ánh Sáng Tình Yêu<img src="" alt="" height="" width="" class=""></a>
+                <a href="#">BST. Bản Tình Ca Vượt Thời Gian<img src="" alt="" height="" width="" class=""></a>
+                <a href="#">BST. Nét Đẹp Nghệ Thuật Ngày Cưới<img src="" alt="" height="" width="" class=""></a>
+                <a href="#" class="selected">BST. Sắc Màu Bình Yên<img src="assets/images/menu-img.jpg" alt="" height=""
+                        width="" class=""></a>
+                <a href="#">BST. Cuộc Phiêu Lưu Của Cặp Đôi Đầy Màu Sắc<img src="" alt="" height="" width=""
+                        class=""></a>
+                <a href="#">BST. Hành Trình Tìm Kiếm Tình Yêu<img src="" alt="" height="" width="" class=""></a>
+            </nav>
+        </div>
     </header>
 
     <main class=body>
@@ -227,7 +235,7 @@
             <div class="lst-slide-2">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-1.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -235,7 +243,7 @@
                             <div class="item-box__price p32">5.666d - 18.100d</div>
                         </a>
 
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-2.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -243,7 +251,7 @@
                             <div class="item-box__price p32">5.666d - 18.100d</div>
                         </a>
 
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-3.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -294,7 +302,7 @@
             <div class="lst-slide-3">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-1.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -302,7 +310,7 @@
                             <div class="item-box__price p32">5.666d - 18.100d</div>
                         </a>
 
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-2.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -310,7 +318,7 @@
                             <div class="item-box__price p32">5.666d - 18.100d</div>
                         </a>
 
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-3.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -424,7 +432,7 @@
             <div class="lst-slide-6">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-1.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -432,7 +440,7 @@
                             <div class="item-box__price p32">5.666d - 18.100d</div>
                         </a>
 
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-2.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -440,7 +448,7 @@
                             <div class="item-box__price p32">5.666d - 18.100d</div>
                         </a>
 
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-3.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -483,7 +491,7 @@
             <div class="lst-slide-3">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-1.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -491,7 +499,7 @@
                             <div class="item-box__price p32">5.666d - 18.100d</div>
                         </a>
 
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-2.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -499,7 +507,7 @@
                             <div class="item-box__price p32">5.666d - 18.100d</div>
                         </a>
 
-                        <a class="swiper-slide item-box bordered n-r">
+                        <a class="swiper-slide item-box bordered">
                             <img class="" src="assets/images/galleries/s-3.jpg" alt="" height="" width="" />
                             <div class="hot-tag">Mới</div>
                             <div class="new-tag">Bán chạy</div>
@@ -538,10 +546,235 @@
         <div class="banner">
             <img class="" src="assets/images/banners/banner-3.jpg" alt="" height="" width="" />
         </div>
+
+        <div class="general-title">
+            <div class="general-title__sub">
+                Blog
+            </div>
+            Tổng hợp bài viết
+        </div>
+
+        <div>
+            <div class="lst-blog">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide item-box bordered">
+                            <img class="" src="assets/images/posts/1.jpg" alt="" height="" width="" />
+                            <div class="hot-tag">Mới</div>
+                            <div class="new-tag">Bán chạy</div>
+                            <div class="item-box__title p32">Chi phí đám cưới gồm những gì? Cách tối ưu chi phí đám cưới
+                                bạn nên biết</div>
+                            <div class="item-box__content p32">
+                                Đám cưới là dịp trọng đại trong đời của mỗi người. Để tổ chức được một đám cưới hoàn
+                                hảo, cặp đôi cần chuẩn bị rất nhiều giai đoạn. Và không thể phủ nhận rằng chi phí đám
+                                cưới là vấn đề rất được quan tâm. Việc làm sao để bỏ ra một chi phí đám cưới hợp lý cho
+                                việc tổ chức một lễ cưới ấn tượng mà không phải đánh đổi quá nhiều về mặt tài chính là
+                                mối quan tâm của tất cả các cặp đôi. Meliora sẽ tổng hợp chi tiết các chi phí đám cưới
+                                mà các cặp đôi cần chú ý trong bài viết dưới đây nhé.
+                            </div>
+
+                            <div class="item-box__summary">
+                                <div class="item-box__published-date">30 Tháng Tám, 2023</div>
+                                <div class="item-box__read-time">3 phút đọc</div>
+                                <div class="item-box__view">Xem bài viết</div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="swiper-slide item-box bordered">
+                            <img class="" src="assets/images/posts/2.jpg" alt="" height="" width="" />
+                            <div class="hot-tag">Mới</div>
+                            <div class="new-tag">Bán chạy</div>
+                            <div class="item-box__title p32">Thiệp cưới hoa hướng dương – Biểu tượng sự thủy chung, son
+                                sắt</div>
+                            <div class="item-box__content p32">
+                                Thiệp cưới luôn là một phần không thể thiếu góp phần làm cho đám cưới của cô dâu chú rể
+                                hoàn hảo nhất. Việc lựa chọn thiệp cưới cũng có thể phụ thuộc vào phong cách tổ chức đám
+                                cưới cũng như ý nghĩa và mong muốn của cô dâu chú rể về đám cưới của mình. Thiệp cưới
+                                hoa hướng dương là một trong những loại thiệp được các cặp đôi yêu thích nhất không chỉ
+                                bởi vẻ đẹp mà còn bởi ý nghĩa mà nó mang lại.
+                            </div>
+
+                            <div class="item-box__summary">
+                                <div class="item-box__published-date">30 Tháng Tám, 2023</div>
+                                <div class="item-box__read-time">3 phút đọc</div>
+                                <div class="item-box__view">Xem bài viết</div>
+                            </div>
+                        </a>
+
+                        <a href="#" class="swiper-slide item-box bordered">
+                            <img class="" src="assets/images/posts/3.jpg" alt="" height="" width="" />
+                            <div class="hot-tag">Mới</div>
+                            <div class="new-tag">Bán chạy</div>
+                            <div class="item-box__title p32">Các nghi lễ trong đám cưới: Nét đẹp văn hóa truyền thống và
+                                tình yêu</div>
+                            <div class="item-box__content p32">
+                                Từ xưa tới nay, các nghi lễ trong đám cưới của người Việt Nam không chỉ là phong tục,
+                                truyền thống mà còn là biểu tượng của sự tôn trọng đối với ngày trọng đại. Mỗi một nghi
+                                lễ đều mang trong mình một giá trị đặc biệt, góp phần làm tăng thêm sự trang trọng và
+                                đặc biệt cho lễ cưới. Những giá trị truyền thống dân tộc này luôn là nét đẹp đầy ý
+                                nghĩa. Để hiểu rõ hơn về các lễ trong đám cưới cũng như thứ tự các lễ trong đám cưới,
+                                hãy cùng Meliora tìm hiểu thật kỹ trong bài viết dưới đây.
+                            </div>
+
+                            <div class="item-box__summary">
+                                <div class="item-box__published-date">30 Tháng Tám, 2023</div>
+                                <div class="item-box__read-time">3 phút đọc</div>
+                                <div class="item-box__view">Xem bài viết</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <script>
+                    let swiperBlog = new Swiper('.lst-blog .swiper-container', {
+                        slidesPerView: 3,
+                        spaceBetween: 0,
+                        loop: false
+                    }
+                    );
+                </script>
+            </div>
+        </div>
+
+        <div class="home-intro flex-center">
+            <img src="assets/images/home-intro.jpg" height="" width="" alt="" />
+
+            Chúng tôi tạo ra những thiệp cưới không chỉ là giấy, mà còn là những câu chuyện tình yêu trong hình thức
+            nghệ thuật. Với chất lượng cao cấp và sự thanh lịch, những thiệp mời của chúng tôi là biểu tượng của sự sang
+            trọng. Thiết kế với các vật liệu tốt nhất và sự chú ý đến từng chi tiết, mỗi thiệp mời là một bắt đầu hoàn
+            hảo cho ngày hoàn hảo của bạn. Hãy để chúng tôi tạo ra điều đặc biệt cho ngày đặc biệt của bạn.
+        </div>
+
+        <div class="flex-center">
+            <div>Nguồn cảm hứng cho đám cưới của bạn!</div>
+            <div>Theo dõi chúng tôi tại @Meliora</div>
+        </div>
+
+        <style>
+            .home-gallery {
+                display: grid;
+                grid-template-columns: 20% 20% 20% 20% 20%;
+                gap: 0;
+            }
+
+            .home-gallery div {
+                display: grid;
+            }
+
+            .home-gallery img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 1;
+                object-fit: cover;
+            }
+
+            .home-gallery a {
+                padding: 11px 32px 11px 32px;
+                font-size: 19px;
+                font-weight: 600;
+                line-height: 23.75px;
+                color: #3B403D;
+                background-color: #fff;
+            }
+
+            .home-gallery .txt-content {
+                padding: 32px;
+                background-color: #3B403D;
+                font-size: 38px;
+                font-weight: 600;
+                line-height: 56.4px;
+                color: #fff;
+            }
+        </style>
+        <div class="home-gallery">
+            <div>
+                <img src="assets/images/footer/1.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/2.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/3.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/4.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/5.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/6.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/7.jpg" alt="" height="" width="" />
+            </div>
+            <div class="flex-center txt-content">
+                <div>Cảm Hứng Cho Đám Cưới Của Bạn</div>
+                <a href="#">Khám phá ngay</a>
+            </div>
+            <div>
+                <img src="assets/images/footer/8.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/9.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/1.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/2.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/3.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/4.jpg" alt="" height="" width="" />
+            </div>
+            <div>
+                <img src="assets/images/footer/5.jpg" alt="" height="" width="" />
+            </div>
+        </div>
     </main>
 
-    <footer class=footer>
-
+    <footer>
+        <div class="footer-top">
+            <div>
+                <div class="txt-primary">Khám phá</div>
+                <a href="#" class="txt-secondary">Giới thiệu</a>
+                <a href="#" class="txt-secondary">Câu chuyện của chúng tôi</a>
+                <a href="#" class="txt-secondary">Các bộ sưu tập</a>
+            </div>
+            <div>
+                <div class="txt-primary">Trợ giúp</div>
+                <a href="#" class="txt-secondary">Liên hệ</a>
+                <a href="#" class="txt-secondary">Mua hàng</a>
+                <a href="#" class="txt-secondary">Shipping & Handling</a>
+                <a href="#" class="txt-secondary">Đổi trả và hoàn tiền</a>
+            </div>
+            <div>
+                <div class="txt-primary">Theo dõi chúng tôi tại</div>
+                <a href="#" class="txt-secondary">Instagram</a>
+                <a href="#" class="txt-secondary">Facebook</a>
+                <a href="#" class="txt-secondary">Tiktok</a>
+                <a href="#" class="txt-secondary">Pinterest</a>
+            </div>
+            <div class="footer-discount">
+                <div class="txt-promo">Ưu đãi từ Meliora</div>
+                <div class="txt-content">
+                    Hãy cùng tham gia chuyến phiêu lưu khắp hành tinh của chúng tôi và nhận tin tức, ý tưởng và cuộc
+                    phiêu lưu. Đăng ký để nhận ưu đãi 10% cho lần mua đầu tiên với giá không giảm giá.
+                </div>
+                <div>
+                    <input type="text" placeholder="Địa chỉ Email">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom flex-align-center">
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Chính sách về thông tin</a>
+            <a href="#">Điều khoản dịch vụ</a>
+            <div class="copyright">©Meliora2024</div>
+        </div>
     </footer>
 
     <script>
