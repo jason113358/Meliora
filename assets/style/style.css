@@ -1310,6 +1310,10 @@ header input[id="isShowMenu"]:checked~.menu-reg {
     padding: 32px;
 }
 
+.lst-blog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 /* #region breadcrumbs  */
 ul.breadcrumb-nav {
@@ -1400,6 +1404,22 @@ ul.breadcrumb-nav li a:hover {
     font-weight: 600;
     line-height: 42px;
     /* Must have height with dropdowns */
+}
+
+.category-filter__show-more {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 23.75px;
+    color: #3B403D;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.category-filter__show-more a:hover {
+    opacity: 0.5;
 }
 
 .category-filter__dropdowns {}
