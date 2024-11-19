@@ -1703,6 +1703,271 @@ ul.breadcrumb-nav li a:hover {
     opacity: 0.8;
 }
 
+.blog-summary {
+    border: 1px solid #877D74;
+    border-width: 1px 0 1px 0;
+}
+
+.blog-summary-ctn {
+    width: 952px;
+    height: 200px;
+    margin: 180px auto;
+}
+
+.blog-summary-title {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 48.36px;
+    color: #242322;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.blog-summary-desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #3B403D;
+    width: 100%;
+}
+
+.blog-social-info {
+    padding: 64px 32px;
+    border-bottom: 1px solid #877D74;
+}
+
+.author-info {
+    display: flex;
+    width: 25%;
+}
+
+.author-img img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.author-name {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27.6px;
+    color: #242322;
+}
+
+.publish-date {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #3B403D;
+}
+
+
+.social-sharing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+}
+
+.social-sharing a {
+    text-align: right;
+}
+
+.share-link {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 23.75px;
+    color: #3B403D;
+}
+
+.related-blog {
+    margin-top: 100px;
+    border-top: 1px solid #877D74;
+}
+
+.home-gallery {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    gap: 0;
+}
+
+.home-gallery div {
+    display: grid;
+}
+
+.home-gallery img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.home-gallery a {
+    padding: 11px 32px 11px 32px;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 23.75px;
+    color: #3B403D;
+    background-color: #fff;
+}
+
+.home-gallery .txt-content {
+    padding: 32px;
+    background-color: #3B403D;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56.4px;
+    color: #fff;
+}
+
+/* #region Contact & Payment*/
+.box-border {
+    border-top: 1px solid #877D74;
+    border-bottom: 1px solid #877D74;
+}
+
+.form-ctn {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1px;
+}
+
+.form-left {
+    padding: 48px 32px;
+    border-right: 1px solid #877D74;
+}
+
+.form-left__title {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27.6px;
+    padding: 10px 0;
+}
+
+.form-left__text {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 21.85px;
+    padding-bottom: 20px;
+}
+
+.form-right {
+    padding: 48px 32px;
+}
+
+.form-inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+.form-headline {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 32.4px;
+    padding-bottom: 20px;
+}
+
+.form-right__title {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 21.85px;
+    padding: 20px 0;
+}
+
+.form-right__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+}
+
+.form-right__input input,
+.form-right__input textarea {
+    height: 44px;
+    width: 100%;
+    color: #3B403D;
+    border: 1px solid #3B403D;
+    background-color: transparent;
+}
+
+.form-right__input textarea {
+    padding: 12px;
+    height: 160px;
+}
+
+.form-right__input input {
+    padding: 12px;
+}
+
+.form-right__input input::placeholder,
+.form-right__input textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-right__button {
+    height: 56px;
+    width: fit-content;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 23.75px;
+    background-color: #3B403D;
+    color: #fff;
+}
+
+
+.order-details {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 21.85px;
+}
+
+.order-item {
+    font-weight: bold;
+}
+
+.order-subtotal,
+.order-total {
+    text-align: right;
+}
+
+.total-amount {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.order-note {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.order-button {
+    background-color: #3B403D;
+    color: #fff;
+    padding: 15px 100px;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 23.75px;
+}
+
+.order-button:hover {
+    background-color: #3B403D;
+}
+
+/* #endregion */
+
+
 /* #region Footer */
 footer {
     background-color: #3B403D;
