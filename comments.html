@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đánh giá và nhận xét</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+    }
+
+    h1 {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .average-rating {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+
+    .rating-summary {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .average-score {
+      text-align: center;
+    }
+
+    .rating-distribution p {
+      display: flex;
+      align-items: center;
+    }
+
+    .bar {
+      flex: 1;
+      margin: 0 10px;
+      height: 5px;
+      background: #ddd;
+    }
+
+    .bar.filled {
+      background: gold;
+    }
+
+    .reviews {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      overflow-y: auto;
+      max-height: 400px;
+    }
+
+    .review {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+    }
+
+    .review h3 {
+      margin-bottom: 5px;
+    }
+
+    .review-form {
+      grid-column: 1 / -1;
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input,
+    textarea,
+    button {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #333;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #555;
+    }
+  </style>
+  <div class="container">
+    <!-- Header -->
+    <h1>Đánh giá và nhận xét</h1>
+
+    <!-- Average Rating -->
+    <div class="average-rating">
+      <div class="rating-summary">
+        <div class="average-score">
+          <p>Điểm đánh giá trung bình</p>
+          <h2>1/5</h2>
+        </div>
+        <div class="rating-distribution">
+          <p>5 ★ <span class="bar"></span> 0</p>
+          <p>4 ★ <span class="bar"></span> 0</p>
+          <p>3 ★ <span class="bar"></span> 0</p>
+          <p>2 ★ <span class="bar"></span> 0</p>
+          <p>1 ★ <span class="bar filled"></span> 5</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="reviews">
+      <div class="review">
+        <h3>John Khỏe</h3>
+        <p>★☆☆☆☆</p>
+        <p>Thiệp như %^&*, Gửi xong...</p>
+      </div>
+      <!-- Repeat Review -->
+      <div class="review">
+        <h3>John Khỏe</h3>
+        <p>★☆☆☆☆</p>
+        <p>Thiệp như %^&*, Gửi xong...</p>
+      </div>
+      <!-- Add more reviews as needed -->
+    </div>
+
+    <!-- Review Form -->
+    <form class="review-form">
+      <h2>Đánh giá sản phẩm</h2>
+      <div class="form-group">
+        <label for="name">Tên của bạn *</label>
+        <input type="text" id="name" placeholder="Nhập tên của bạn tại đây">
+      </div>
+      <div class="form-group">
+        <label for="email">Địa chỉ email *</label>
+        <input type="email" id="email" placeholder="Nhập email của bạn tại đây">
+      </div>
+      <div class="form-group">
+        <label for="comment">Nhận xét của bạn *</label>
+        <textarea id="comment" placeholder="Nhập nhận xét của bạn tại đây"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="checkbox" id="save-info">
+        <label for="save-info">Lưu tên của tôi, email, và trang web này...</label>
+      </div>
+      <button type="submit">Gửi nhận xét</button>
+    </form>
+  </div>
+</body>
+
+</html>
